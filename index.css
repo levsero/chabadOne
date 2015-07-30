@@ -34,8 +34,8 @@ img {
 
 /* head section */
 
-header {
-  width: 100;
+.header {
+  width: 100%;
   display: block;
   padding: 20px 0;
   border-bottom: 1px solid silver;
