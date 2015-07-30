@@ -1,0 +1,158 @@
+header, header-text, h1, h3, button, a, content, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  font-family: sans-serif;
+  border-radius: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  text-align: center;
+  background: #fff;
+}
+
+/* main section */
+
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+  max-height: 360px;
+}
+
+header-text {
+  padding: 50px 10px 0 0;
+  float: left;
+  width: calc(50% - 10px);
+  display: block;
+  text-align: right;
+}
+
+.header-text {
+  float: right;
+  vertical-align: center;
+}
+
+header-text > h1 {
+  width: 400px;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+header-text > h3 {
+  width: 100%;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+header-text > .button {
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+}
+
+header-image {
+  float: left;
+  width: calc(50% - 10px);
+  display: block;
+  padding-right: 10px;
+}
+
+header-image > img {
+  width: 340px;
+  float: left;
+}
+
+/* news items */
+
+content {
+}
+
+content > ul {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+li.news-item {
+  padding: 10px 0;
+  float: left;
+  display: block;
+  width: 33%;
+}
+
+/* image boxes */
+container {
+  margin-top: 20px;
+}
+
+container > ul {
+  float: left;
+  width: calc(50% - 5px);
+  border-top: 1px solid red;
+}
+
+container h3 {
+  padding-top: 10px;
+  width: 100%;
+  font-weight: bold;
+  color: red;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul.do-it-list {
+  margin-right: 5px;
+}
+
+ul.customer-list {
+  margin-left: 5px;
+}
+
+container li {
+  position: relative;
+  float: left;
+  width: 33.33%;
+}
+
+li > layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255,0,100,0.5); 
+}
+
+.img-text {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  color: white;
+}
