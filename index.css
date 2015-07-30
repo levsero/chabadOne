@@ -1,6 +1,6 @@
 /* resets */
 
-header, header-text, h1, h3, button, a, content, ul, li, p {
+body, header, div, h1, h3, button, a, ul, li, p, span {
   margin: 0;
   padding: 0;
   border: 0;
@@ -41,8 +41,9 @@ header {
   color: #a23125;
 }
 
-header-text {
-  padding: 50px 10px 0 0;
+.header-text-container
+ {
+  padding: 45px 10px 0 0;
   float: left;
   width: calc(50% - 10px);
   display: block;
@@ -51,16 +52,15 @@ header-text {
 
 .header-text {
   float: right;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
-header-text > h1 {
-  width: 400px;
+.header-text-container > h1 {
   font-weight: bold;
   font-size: 60px;
 }
 
-header-text > h3 {
+.header-text-container > h3 {
   width: 100%;
   font-style: italic;
   font-weight: 300;
@@ -68,59 +68,60 @@ header-text > h3 {
   margin-bottom: 10px;
 }
 
-header-text > .button {
+.header-text-container > .button {
   font-weight: bold;
-  background-color: #a23125
-;
+  background-color: #a23125;
   color: white;
   padding: 5px 10px;
 }
 
-header-image {
+.header-image {
   float: left;
   width: calc(50% - 10px);
   display: block;
   padding-right: 10px;
 }
 
-header-image > img {
-  width: 340px;
+.header-image > img {
+  height: 340px;
+  width: auto;
   float: left;
 }
 
 /* news items */
 
-content {
+.news {
 }
 
-content > ul {
-  padding-bottom: 30px;
+.news > ul {
+  padding-bottom: 10px;
   width: 80%;
   padding-top: 10px;
   margin: 0 auto;
 }
 
 li.news-item {
-  height: 18px;
+  padding: 0 5px;
+  height: 19px;
   float: left;
   display: block;
-  width: 33%;
+  width: calc(33% - 10px);
   overflow: hidden;
 }
 
 /* image boxes */
 
-container {
+.img-boxes {
   margin-top: 20px;
 }
 
-container > ul {
+.img-boxes > ul {
   float: left;
   width: calc(50% - 5px);
   border-top: 1px solid #a23125;
 }
 
-container h3 {
+.img-boxes h3 {
   text-align: center;
   padding-top: 10px;
   width: 100%;
@@ -138,13 +139,13 @@ ul.customer-list {
   margin-left: 5px;
 }
 
-container li {
+.img-boxes li {
   position: relative;
   float: left;
   width: 33.33%;
 }
 
-container li > a {
+.img-boxes li > a {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -152,21 +153,31 @@ container li > a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(135deg, rgba(232,76,60,1) 0%,rgba(232,76,60,0.99) 1%,rgba(255,255,255,0.35) 65%,rgba(255,255,255,0) 100%);}
+  background: linear-gradient(135deg, rgba(232,76,60,1) 0%,rgba(232,76,60,0.99) 1%,rgba(255,255,255,0.35) 65%,rgba(255,255,255,0) 100%);
+  transition: background .3s ease-in;
+}
 
-layer {
+.layer {
+  display: block;
   height: 100%;
   width: 100%;
   background-color: rgba(40,43,48,0.45);
-
+  transition: background .3s ease-in;
 }
 
-container li > a:hover {
-  /*background: linear-gradient(135deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.35) 35%,rgba(232,76,60,0.99) 99%,rgba(232,76,60,1) 100%); /* W3C */
-  /*background-color: rgba(40,43,48,0.45);*/
+.img-boxes li > a:hover{
+  background: linear-gradient(135deg, rgba(255,255,255,0) 100%,rgba(255,255,255,0) 100%,rgba(232,76,60,0) 100%,rgba(232,76,60,1) 100%); /* W3C */
 }
 
-layer > p {
+.img-boxes li > a:hover .layer {
+  background-color: rgba(40,43,48,0);
+}
+.img-boxes li > a:hover .layer p{
+  text-shadow: 0px 0px 10px black;
+}
+
+.layer > p {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -178,4 +189,19 @@ layer > p {
   z-index: 4;
   color: white;
   font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+/*
+  height of header image
+  header and img 100% width
+  remove floats
+  font sizes
+
+  news items set width to 100%
+  remove line height/ overflow hidden
+
+  img width 50%
+  change col width 100% and remove padding
+*/
 }
