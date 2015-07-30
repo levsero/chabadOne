@@ -45,6 +45,7 @@ header {
  {
   padding: 45px 10px 0 0;
   float: left;
+  width: 45%;
   width: calc(50% - 10px);
   display: block;
   text-align: right;
@@ -77,6 +78,7 @@ header {
 
 .header-image {
   float: left;
+  width: 45%;
   width: calc(50% - 10px);
   display: block;
   padding-right: 10px;
@@ -105,6 +107,7 @@ li.news-item {
   height: 19px;
   float: left;
   display: block;
+  width: 25%;
   width: calc(33% - 10px);
   overflow: hidden;
 }
@@ -117,6 +120,7 @@ li.news-item {
 
 .img-boxes > ul {
   float: left;
+  width: 45%;
   width: calc(50% - 5px);
   border-top: 1px solid #a23125;
 }
