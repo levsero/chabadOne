@@ -1,3 +1,5 @@
+/* resets */
+
 header, header-text, h1, h3, button, a, content, ul, li, p {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@ header, header-text, h1, h3, button, a, content, ul, li, p {
   vertical-align: inherit;
   box-sizing: inherit;
   background: transparent;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   border-radius: 0;
 }
 
@@ -30,17 +32,13 @@ img {
   height: auto;
 }
 
-body {
-  text-align: center;
-  background: #fff;
-}
-
-/* main section */
+/* head section */
 
 header {
   padding: 20px 0;
   border-bottom: 1px solid silver;
   max-height: 360px;
+  color: #a23125;
 }
 
 header-text {
@@ -64,14 +62,16 @@ header-text > h1 {
 
 header-text > h3 {
   width: 100%;
-  font-weight: normal;
+  font-style: italic;
+  font-weight: 300;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 header-text > .button {
   font-weight: bold;
-  background-color: red;
+  background-color: #a23125
+;
   color: white;
   padding: 5px 10px;
 }
@@ -94,18 +94,22 @@ content {
 }
 
 content > ul {
-  padding-bottom: 20px;
-  width: 100%;
+  padding-bottom: 30px;
+  width: 80%;
+  padding-top: 10px;
+  margin: 0 auto;
 }
 
 li.news-item {
-  padding: 10px 0;
+  height: 18px;
   float: left;
   display: block;
   width: 33%;
+  overflow: hidden;
 }
 
 /* image boxes */
+
 container {
   margin-top: 20px;
 }
@@ -113,14 +117,15 @@ container {
 container > ul {
   float: left;
   width: calc(50% - 5px);
-  border-top: 1px solid red;
+  border-top: 1px solid #a23125;
 }
 
 container h3 {
+  text-align: center;
   padding-top: 10px;
   width: 100%;
   font-weight: bold;
-  color: red;
+  color: #a23125;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -139,7 +144,7 @@ container li {
   width: 33.33%;
 }
 
-li > a {
+container li > a {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -147,10 +152,21 @@ li > a {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255,0,100,0.5);
+  background: linear-gradient(135deg, rgba(232,76,60,1) 0%,rgba(232,76,60,0.99) 1%,rgba(255,255,255,0.35) 65%,rgba(255,255,255,0) 100%);}
+
+layer {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40,43,48,0.45);
+
 }
 
-a > p {
+container li > a:hover {
+  /*background: linear-gradient(135deg, rgba(255,255,255,0) 0%,rgba(255,255,255,0.35) 35%,rgba(232,76,60,0.99) 99%,rgba(232,76,60,1) 100%); /* W3C */
+  /*background-color: rgba(40,43,48,0.45);*/
+}
+
+layer > p {
   position: absolute;
   top: 50%;
   left: 50%;
