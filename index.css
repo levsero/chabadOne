@@ -1,4 +1,4 @@
-header, header-text, h1, h3, button, a, content, ul, li {
+header, header-text, h1, h3, button, a, content, ul, li, p {
   margin: 0;
   padding: 0;
   border: 0;
@@ -139,20 +139,27 @@ container li {
   width: 33.33%;
 }
 
-li > layer {
+li > a {
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255,0,100,0.5); 
+  background-color: rgba(255,0,100,0.5);
+}
+
+a > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .img-text {
   position: absolute;
   z-index: 4;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
   color: white;
+  font-size: 24px;
 }
