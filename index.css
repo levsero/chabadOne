@@ -194,7 +194,9 @@ ul.customer-list {
   position: absolute;
   z-index: 4;
   color: white;
-  font-size: 24px;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media (max-width: 1000px) {
