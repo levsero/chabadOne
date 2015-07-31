@@ -219,9 +219,7 @@ ul.customer-list {
   li.news-item {
     width: 100%;
     margin: 5px 0;
-    overflow: visible;
     text-align: center;
-    max-height: 36px;
   }
 
   .img-boxes {
