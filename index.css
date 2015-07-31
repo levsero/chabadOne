@@ -73,10 +73,23 @@ img {
 
 .header-text-container .button {
   font-weight: bold;
-  background-color: #a23125;
+  background-color: #c75751;
   color: white;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 0 #a23125;
 }
+
+.header-text-container .button:hover {
+  background-color: #a23125;
+}
+
+.header-text-container .button:active {
+  margin-top: 3px;
+  box-shadow: none;
+}
+
+
 
 .header-image {
   float: left;
