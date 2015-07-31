@@ -212,11 +212,16 @@ ul.customer-list {
   img width 50%
   change col width 100% and remove padding
 */
+  .news ul {
+    width: 100%
+  }
+
   li.news-item {
     width: 100%;
-    padding: 5px 0;
+    margin: 5px 0;
     overflow: visible;
     text-align: center;
+    max-height: 36px;
   }
 
   .img-boxes {
