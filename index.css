@@ -224,6 +224,8 @@ ul.customer-list {
 
   img width 50%
   change col width 100% and remove padding
+
+  change button styling
 */
   .header-text-container .button {
     background-color: #a23125;
@@ -298,11 +300,11 @@ ul.customer-list {
   }
 
   ul.do-it-list {
-    padding-right: 0;
+    padding: 0;
   }
 
   ul.customer-list {
-    padding-left: 0;
+    padding: 0;
   }
 
   .img-boxes li {
